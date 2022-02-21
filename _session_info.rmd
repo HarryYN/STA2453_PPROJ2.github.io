@@ -1,0 +1,5 @@
+Session information:
+The session info when rendered
+
+
+

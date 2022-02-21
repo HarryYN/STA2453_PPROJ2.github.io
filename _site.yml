@@ -1,9 +1,33 @@
-name: "my personal site"
+name: "Mywebsite"
 output_dir: "docs"
 navbar:
-  title: "my site"
+  title: "My website navbar"
   left:
-    - text: "home"
-      href: 'index.html'
-    - text: "about me"
-      href: "about.html"
+    - text: "Page #1"
+      href: page1.html
+    - text: "Page #2"
+      href: page2.html
+    - text: "More"
+      icon: fa-gear
+      menu:
+        - text: "Heading 1"
+        - text: "About Me"
+          href: about.html
+        - text: "CV"
+          href: page-b.html
+        - text: "---------"
+        - text: "Heading 2"
+        - text: "Page C"
+          href: page-c.html
+        - text: "Page D"
+          href: page-d.html
+  right:
+    - icon: fa-envelope fa-lg
+      href: username@email.com
+    - icon: fa-github fa-lg
+      href: https://github.com/yourgithub_uname
+output:
+  html_document:
+    theme: darkly
+    include:
+      after_body: footer.html
